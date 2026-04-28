@@ -1,7 +1,9 @@
-stage('Run Tests') {
-    steps {
-        container('python') {
-            sh 'python3 test.py'
-        }
-    }
-}
+print("Running test...")
+
+x = 5
+y = 5
+
+if x != y:
+    raise Exception("Test Failed")
+
+print("Test Passed")
